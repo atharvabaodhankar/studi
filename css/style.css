@@ -41,7 +41,11 @@ body {
      font-family: 'Lato', sans-serif;
      line-height: 1.80857;
      font-weight: normal;
-     user-select: none
+     /* user-select: none; */
+}
+::selection{
+     color: #fff;
+     background-color: var(--main);
 }
 
 :root {
@@ -59,7 +63,10 @@ a {
      -o-transition: all .3s ease-in-out;
      transition: all .3s ease-in-out;
 }
-
+b{
+     font-size: 1.9rem;
+     text-align: center;
+}
 h1,
 h2,
 h3,
@@ -498,9 +505,6 @@ button {
      border-radius: 1rem;
 }
 
-.question-bank-img {
-     background-image: url(../images/Qb.png);
-}
 
 .assignments-box h3 {
      margin-top: 4rem;
@@ -1535,7 +1539,8 @@ nav ul li a:hover {
 .aboutus {
      display: flex;
      align-items: center;
-     justify-content: center;
+     width: 90%;
+     justify-content: space-evenly;
 }
 
 .aboutus-text {
@@ -1588,14 +1593,11 @@ nav ul li a:hover {
      display: flex;
      align-items: center;
      justify-content: center;
+     flex-wrap: wrap;
 }
-.aboutus-row{
-     display: flex;
-     align-items: center;
-     justify-content: center;
-}
+
 .aboutus-box{
-     margin: 0 5rem;
+     margin: 0 2rem;
 }
 .our-team {
      padding: 30px 0 40px;
@@ -1702,6 +1704,44 @@ nav ul li a:hover {
    }
    
 
+   /* Papers */
+#papers{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     padding: 6rem 0;
+}
+#papers-main{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     padding: 6rem 0;
+}
+.papers-header{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     text-align: center;
+     margin: 3rem 0;
+     padding: 0 3rem;
+}
+.papers-header h1 {
+     font-size: 5rem;
+     color: var(--main-dark);
+}
+.papers{
+     width: 80%;
+}
+.papers-table{
+     width: 80%;
+     margin: 3rem 0;
+}
+.papers-th{
+     text-align: center;
+}
 @media screen and (max-width:1200px) {
      .assignments-box {
           width: 290px;
@@ -1710,15 +1750,6 @@ nav ul li a:hover {
      .assignments-desc {
           height: 200px;
      }
-}
-
-@media screen and (max-width:930px) {
-     .aboutus-row {
-          flex-direction: column;
-      }
-}
-@media screen and (max-width:820px) {
-
      .hamburger {
           display: inherit;
      }
@@ -1750,6 +1781,16 @@ nav ul li a:hover {
      nav ul li {
           margin: 1.3rem 0;
      }
+}
+
+@media screen and (max-width:930px) {
+     .aboutus-row {
+          flex-direction: column;
+      }
+}
+@media screen and (max-width:820px) {
+
+    
 
      #footer-main {
           flex-wrap: wrap;
@@ -1764,6 +1805,12 @@ nav ul li a:hover {
      .footer-rights {
           margin: 5rem 0;
      }
+     .papers-table {
+          width: 90%;
+      }
+      .papers-header h1 {
+          font-size: 3rem;
+      }
 }
 
 /** end footer **/

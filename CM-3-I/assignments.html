@@ -40,7 +40,7 @@
             <a href="#"><h1 >Studi</h1></a>
          </div>
          <ul>
-            <li><a onclick="closeop()" href="../CM-3-I/home.html">Home</a></li>
+            <li><a onclick="closeop()" href="../CM-2-I/home.html">Home</a></li>
             <li><a onclick="closeop()" href="../CM-2-I/home.html#syllabus">Syllabus</a></li>
             <li><a onclick="closeop()" href="../CM-2-I/home.html#manual-ans">Manual</a></li>
             <li><a onclick="closeop()" href="../CM-2-I/home.html#notes">Notes</a></li>
@@ -112,32 +112,8 @@
         </div>
      
      </section>
-     <script>
+     <script src="js/index.js"></script>
 
-      var navbar = document.querySelector("nav");
-      var hamburger = document.querySelector(".hamburger");
-
-      hamburger.addEventListener("click", () => {
-         navbar.classList.toggle("active");
-         hamburger.classList.toggle("active");
-      })
-
-      window.addEventListener("scroll", () => {
-         if (scrollY > 700) {
-            navbar.classList.add("active-bar");
-         } else {
-            navbar.classList.remove("active-bar");
-         }
-      })
-      function closeop() {
-         navbar.classList.remove("active");
-         hamburger.classList.remove("active");
-      }
-
-
-
-
-   </script>
 
     
 </body>
