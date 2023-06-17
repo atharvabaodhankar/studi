@@ -51,6 +51,9 @@ body {
 :root {
      --main: #865DFF;
      --main-dark: #6740d9;
+     --red : #EF1551;
+     --orange : #F15A23;
+     --pink : #CC56A0;
 }
 
 a {
@@ -681,26 +684,26 @@ button {
 }
 
 .btn-slide2 {
-     border: 2px solid #CC56A0;
+     border: 2px solid var(--main);
 }
 
 .btn-slide:hover {
-     background-color: #CC56A0;
+     background-color: var(--main);
 }
 
 .btn-slide2:hover {
-     background-color: #CC56A0;
+     background-color: var(--main);
 }
 
 .btn-slide:hover span.circle, .btn-slide2:hover span.circle2 {
      left: 100%;
      margin-left: -45px;
      background-color: #fdfdfd;
-     color: #CC56A0;
+     color: var(--main-dark);
 }
 
 .btn-slide2:hover span.circle2 {
-     color: #CC56A0;
+     color: var(--main);
 }
 
 .btn-slide:hover span.title, .btn-slide2:hover span.title2 {
@@ -715,7 +718,7 @@ button {
 
 .btn-slide span.circle, .btn-slide2 span.circle2 {
      display: block;
-     background-color: #0099cc;
+     background-color: var(--main);
      color: #fff;
      position: absolute;
      float: left;
@@ -729,40 +732,9 @@ button {
      border-radius: 50%;
 }
 
-.manual-box:nth-child(2) .manual-desc .btn-slide2 {
-     border: 2px solid #CC56A0;
-}
 
-.manual-box:nth-child(2) .manual-desc .btn-slide2:hover {
-     background-color: #CC56A0;
-}
-
-.manual-box:nth-child(2) .manual-desc .btn-slide2 span i {
-     color: #fff;
-}
-
-.manual-box:nth-child(2) .manual-desc .btn-slide2 span.circle2 {
-     background-color: #CC56A0;
-}
-
-.manual-box:nth-child(2) .manual-desc .btn-slide2:hover span.circle2 {
-     background-color: #fff;
-}
-
-.manual-box:nth-child(2) .manual-desc .btn-slide2:hover span i {
-     color: #CC56A0;
-}
-
-.manual-box:nth-child(2) .manual-desc .btn-slide2 span {
-     color: #CC56A0;
-}
-
-.manual-box:nth-child(2) .manual-desc .btn-slide2:hover span {
-     color: #fff;
-}
 
 .btn-slide2 span.circle2 {
-     background-color: #CC56A0;
      text-align: center;
 }
 
@@ -775,14 +747,14 @@ button {
      margin: 0 auto;
      font-size: 16px;
      font-weight: bold;
-     color: #CC56A0;
+     color:var(--main);
      transition: .5s;
      top: -3px;
 }
 
 .btn-slide2 span.title2,
 .btn-slide2 span.title-hover2 {
-     color: #CC56A0;
+     color: var(--main);
      left: 80px;
 }
 
@@ -794,92 +766,6 @@ button {
 .btn-slide span.title-hover, .btn-slide2 span.title-hover2 {
      color: #fff;
 }
-
-
-
-
-
-.manual-box:nth-child(2) .manual-desc .btn-slide2 {
-     border: 2px solid #EF1551;
-}
-
-.manual-box:nth-child(2) .manual-desc .btn-slide2:hover {
-     background-color: #EF1551;
-}
-
-.manual-box:nth-child(2) .manual-desc .btn-slide2 span i {
-     color: #fff;
-}
-
-.manual-box:nth-child(2) .manual-desc .btn-slide2 span.circle2 {
-     background-color: #EF1551;
-}
-
-.manual-box:nth-child(2) .manual-desc .btn-slide2:hover span.circle2 {
-     background-color: #fff;
-}
-
-.manual-box:nth-child(2) .manual-desc .btn-slide2:hover span i {
-     color: #EF1551;
-}
-
-.manual-box:nth-child(2) .manual-desc .btn-slide2 span {
-     color: #EF1551;
-}
-
-.manual-box:nth-child(2) .manual-desc .btn-slide2:hover span {
-     color: #fff;
-}
-
-
-
-
-
-
-.manual-box:nth-child(5) .manual-desc .btn-slide2 {
-     border: 2px solid #F15A23;
-}
-
-.manual-box:nth-child(5) .manual-desc .btn-slide2:hover {
-     background-color: #F15A23;
-}
-
-.manual-box:nth-child(5) .manual-desc .btn-slide2 span i {
-     color: #fff;
-}
-
-.manual-box:nth-child(5) .manual-desc .btn-slide2 span.circle2 {
-     background-color: #F15A23;
-}
-
-.manual-box:nth-child(5) .manual-desc .btn-slide2:hover span.circle2 {
-     background-color: #fff;
-}
-
-.manual-box:nth-child(5) .manual-desc .btn-slide2:hover span i {
-     color: #F15A23;
-}
-
-.manual-box:nth-child(5) .manual-desc .btn-slide2 span {
-     color: #F15A23;
-}
-
-.manual-box:nth-child(5) .manual-desc .btn-slide2:hover span {
-     color: #fff;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*--------------------------------------------------------------------- 
 End Syllabus Manual Answers  ---------------------------------------------------------------------*/
