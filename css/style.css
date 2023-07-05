@@ -537,7 +537,32 @@ button {
      transition: all .3s ease;
      font-weight: 600;
 }
-
+.btn-main{
+     background-color: var(--main);
+     border-radius: 3rem;
+     border: 3px solid var(--main);
+     padding: 1rem 3rem;
+     color: #fff;
+     transition: all .3s ease;
+     font-weight: 600;
+     position: relative;
+}
+.btn-main::after{
+     content: '';
+     width: 100%;
+     height: 100%;
+     border-radius: 3rem;
+     border: 3px solid var(--main);
+     position: absolute;
+     left: 0;
+     top: 0;
+     transform: scale(1.5);
+}
+.btn-main:hover{
+     color: var(--main);
+     background-color: #FFF;
+     letter-spacing: 2px;
+}
 .assignments-box a:hover {
      color: var(--main);
      background-color: #FFF;
@@ -1627,7 +1652,7 @@ nav ul li a:hover {
 }
 .papers-th{
      text-align: center;
-}
+   }
 @media screen and (max-width:1200px) {
      .assignments-box {
           width: 290px;
