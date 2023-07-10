@@ -1157,6 +1157,7 @@ nav ul li a:hover {
      overflow: hidden;
      margin: 15px 15px;
      transform-style: preserve-3d;
+     transition: all .3s ease;
 }
 
 .notes-box-bg {
@@ -1187,10 +1188,13 @@ nav ul li a:hover {
      color: #fff;
      z-index: 2;
      font-size: 2rem;
-     padding: 0rem 15px;
+     overflow: hidden;
+     padding: 0rem 0rem;
+     width: 150px;
      border: 2px solid #fff;
      margin-bottom: 4rem;
      position: relative;
+     border-radius: 1.2rem;
 }
 
 .btn-notes::after {
@@ -1229,6 +1233,9 @@ nav ul li a:hover {
      filter: saturate(1.5);
      color: #3e3e3e;
 
+}
+.notes-box:hover{
+     filter: saturate(2);
 }
 
 /* Footer */
@@ -1652,6 +1659,14 @@ nav ul li a:hover {
 }
 .papers-th{
      text-align: center;
+   }
+
+   /* Alerts */
+   .alert{
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content:center;
    }
 @media screen and (max-width:1200px) {
      .assignments-box {

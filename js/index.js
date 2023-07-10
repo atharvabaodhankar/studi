@@ -17,3 +17,4 @@ function closeop() {
    navbar.classList.remove("active");
    hamburger.classList.remove("active");
 }
+ 
