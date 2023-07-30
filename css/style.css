@@ -1022,10 +1022,10 @@ nav.active-bar .logo h1 {
 
 nav .logo h1 {
      font-size: 4rem;
-     color: #02fee50c;
+     color: #02fee500;
      transition: all .5s ease;
      padding: 0 !important;
-     font-weight: 900;
+     font-weight: 300;
 }
 
 nav ul {
@@ -1068,7 +1068,7 @@ nav ul li a:hover {
 
 .hamburger {
      display: flex;
-     align-items: center;
+     align-items: flex-end;
      justify-content: center;
      flex-direction: column;
      position: relative;
@@ -1080,33 +1080,39 @@ nav ul li a:hover {
 }
 
 .hambar {
-     width: 35px;
+     width: 40px;
      height: 4px;
      background-color: #fff;
+     border-radius:1rem ;
      position: absolute;
-     transition: all .2s ease;
+     transition: .5s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
 .hambar:nth-child(1) {
      top: 8px;
+     width: calc(40px * .50);
 }
 
 .hambar:nth-child(3) {
      bottom: 8px;
+     width: calc(40px * .75);
 }
 
 .hamburger.active .hambar:nth-child(1) {
      top: initial;
-     transform: rotate(45deg);
+     transform: rotate(-45deg);
+     width: 40px;
 }
 
 .hamburger.active .hambar:nth-child(2) {
-     opacity: 0;
+    /* opacity: 0; */
+    transform: rotate(45deg);
 }
 
 .hamburger.active .hambar:nth-child(3) {
      bottom: initial;
      transform: rotate(-45deg);
+     width: 40px;
 }
 
 /* Notes */
