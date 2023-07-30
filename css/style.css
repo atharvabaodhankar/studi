@@ -1067,7 +1067,7 @@ nav ul li a:hover {
 }
 
 .hamburger {
-     display: flex;
+     /* display: flex;
      align-items: flex-end;
      justify-content: center;
      flex-direction: column;
@@ -1076,43 +1076,47 @@ nav ul li a:hover {
      width: 60px;
      cursor: pointer;
      display: none;
-     transition: all .3s ease;
+     transition: all .3s ease; */
+
+     display:none;
+     flex-direction:column;
+     width:45px;
+     cursor:pointer;
 }
 
 .hambar {
-     width: 40px;
-     height: 4px;
-     background-color: #fff;
-     border-radius:1rem ;
-     position: absolute;
-     transition: .5s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+     background: #fff;
+  border-radius:10px;
+  height:4px;
+  margin: 4px 0;
+  transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
 .hambar:nth-child(1) {
-     top: 8px;
-     width: calc(40px * .50);
+     width:50%;
+}
+.hambar:nth-child(2){
+     width:100%;
 }
 
 .hambar:nth-child(3) {
-     bottom: 8px;
-     width: calc(40px * .75);
+     width:75%;
 }
 
 .hamburger.active .hambar:nth-child(1) {
-     top: initial;
-     transform: rotate(-45deg);
-     width: 40px;
+     transform-origin:bottom;
+  transform:rotatez(45deg) translate(4px,0px)
 }
 
-.hamburger.active .hambar:nth-child(2) {
-    /* opacity: 0; */
-    transform: rotate(45deg);
+.hamburger.active .hambar:nth-child(2) {    
+  transform-origin:top;
+  transform:rotatez(-45deg)
 }
 
 .hamburger.active .hambar:nth-child(3) {
-     bottom: initial;
-     transform: rotate(-45deg);
-     width: 40px;
+     transform-origin:bottom;
+     width:50%;
+     transform: translate(19px,-5px) rotatez(45deg);
 }
 
 /* Notes */
