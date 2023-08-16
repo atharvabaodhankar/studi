@@ -492,12 +492,11 @@ button {
      margin: 2rem 2rem;
      transition: all .5s ease;
      cursor: pointer;
-     background-image: url(https://atharvabaodhankar.github.io/bizbud/imgs/contact.png);
-     background-attachment: fixed;
+
 }
 
 .assignments-box:hover{
-     background-color: #002bff;
+     background-color: #6640d95b;
 }
 
 .assingments-img {
@@ -1688,9 +1687,6 @@ nav ul li a:hover {
           width: 290px;
      }
 
-     .assignments-desc {
-          height: 200px;
-     }
      .hamburger {
           display: inherit;
      }
