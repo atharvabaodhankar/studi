@@ -664,6 +664,7 @@ button {
      align-items: center;
      justify-content: space-evenly;
      flex-wrap: wrap;
+     width: 100%;
 }
 
 .manual-box {
