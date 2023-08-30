@@ -604,7 +604,7 @@ button {
 }
 .assignments-btn{
      font-size: 1.7rem;
-     padding: 2rem 1.5rem;
+     padding: 1.2rem 1.5rem;
      border-radius: 1rem;
      border:2px solid var(--main);
      color: var(--main-dark);
@@ -617,34 +617,22 @@ button {
 .assignments-btn::after{
      content: '';
      position: absolute;
-     width: 100%;
+     width: 0%;
      transition: all .4s ease;
-     height: 10%;
+     height: 100%;
      left: 0;
      top: 0;
      background-color: var(--main-dark);
      z-index: -1;
 }
-.assignments-btn::before{
-     content: '';
-     position: absolute;
-     width: 100%;
-     transition: all .4s ease;
-     height: 10%;
-     left: 0;
-     bottom: 0;
-     background-color: var(--main-dark);
-     z-index: -1;
-}
+
 .assignments-btn:hover{
      color: #fff;
 }
 .assignments-btn:hover::after{
-     height: 100%;
+     width: 100%;
 }
-.assignments-btn:hover::before{
-     height: 100%;
-}
+
 
 /*-------- Assginments End  ---------------------------------------------------------------------*/
 /*--------------------------------------------------------------------- Syllabus  ---------------------------------------------------------------------*/
