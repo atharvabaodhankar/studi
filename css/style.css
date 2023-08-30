@@ -602,6 +602,49 @@ button {
 .assignments-more a:hover {
      border-radius: 3rem;
 }
+.assignments-btn{
+     font-size: 1.7rem;
+     padding: 2rem 1.5rem;
+     border-radius: 1rem;
+     border:2px solid var(--main);
+     color: var(--main-dark);
+     font-weight: 500;
+     font-family:'Righteous', cursive ;
+     position: relative;
+     overflow: hidden;
+     margin-top: 4rem;
+}
+.assignments-btn::after{
+     content: '';
+     position: absolute;
+     width: 100%;
+     transition: all .4s ease;
+     height: 10%;
+     left: 0;
+     top: 0;
+     background-color: var(--main-dark);
+     z-index: -1;
+}
+.assignments-btn::before{
+     content: '';
+     position: absolute;
+     width: 100%;
+     transition: all .4s ease;
+     height: 10%;
+     left: 0;
+     bottom: 0;
+     background-color: var(--main-dark);
+     z-index: -1;
+}
+.assignments-btn:hover{
+     color: #fff;
+}
+.assignments-btn:hover::after{
+     height: 100%;
+}
+.assignments-btn:hover::before{
+     height: 100%;
+}
 
 /*-------- Assginments End  ---------------------------------------------------------------------*/
 /*--------------------------------------------------------------------- Syllabus  ---------------------------------------------------------------------*/
