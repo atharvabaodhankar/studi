@@ -99,6 +99,8 @@
     <span aria-hidden="true">&times;</span>
   </button>
 </div>
+
+
       <!-- Syllabus -->
       <div id="syllabus" class="syllabus bf-container bf-p-t-2 bf-p-b-2">
          <h1>Syllabus for CM 2nd Sem</h1>
@@ -176,6 +178,22 @@
    
       </div>
       <!-- end Syllabus -->
+      <!-- Popup -->
+    
+      <script>
+         document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
+      </script>
+<div class="popup">
+   <button id="close">&times;</button>
+   <h2>We Have Added over 500 MCQ's</h2>
+   <p>
+       We just have added over 500+ MCQ's on Basic Science which will definetly help you, All The Best
+   </p>
+   <a href="../CM-1-K/modelans.html" class="pop-a">Let's Go</a>
+</div>
+<!-- Popup End-->
       <!-- new start Syllabus -->
       <div id="syllabus-pdf" class="syllabus bf-container bf-p-t-2 bf-p-b-2">
          <h1>Syllabus PDF's</h1>
@@ -559,6 +577,7 @@
    </footer>
    <!-- end footer -->
    <!-- Javascript files-->
+   <script src="../js/popup.js"></script>
    <script src="../js/vanilla.js"></script>
    <script src="../js/jquery.min.js"></script>
    <script src="../js/popper.min.js"></script>
@@ -571,6 +590,7 @@
    <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
    <script src="../js/custom.js"></script>
    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   
 </body>
 
 </html>
