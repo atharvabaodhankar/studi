@@ -1933,6 +1933,9 @@ nav ul li a:hover {
      .text-bg h1 {
           font-size: 45px;
      }
+     .popup{
+          width: 90%;
+     }
 }
 
 @media screen and (max-width:430px) {
