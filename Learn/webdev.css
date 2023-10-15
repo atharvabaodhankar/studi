@@ -7,14 +7,43 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
-nav{
+
+nav {
     top: 0;
 }
+
 h1 {
     font-size: 60px;
     color: #b19af7;
     text-align: center;
     margin: 4rem 1.5rem;
+}
+
+h3 {
+    height: 55px;
+}
+
+.t-p {
+    height: 120px;
+}
+
+.t-body {
+    background-image: url(/images/body_bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.t-h2 {
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    margin: 2rem 0;
+}
+
+.t-h3 {
+    font-family: 'Lato', sans-serif;
 }
 
 .timeline {
@@ -140,6 +169,7 @@ h1 {
 .timeline ul li:nth-child(even):hover .time {
     box-shadow: 0 0 0 7px #b19af7;
 }
+
 .web-video {
     position: fixed;
     right: 0;
@@ -157,6 +187,77 @@ video {
     height: 100%;
     position: absolute;
     z-index: 1;
+}
+
+.aks-container {
+    width: 90vw;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.aks-container-first-child {
+    margin-top: 10rem;
+}
+
+.aks-page-description {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.aks-page-description h1 {
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.aks-page-description p {
+    margin-bottom: 0;
+}
+
+section.aks-container {
+    padding: 40px 0 50px 0;
+}
+
+section.aks-container h2 {
+    margin-top: 0;
+}
+
+.t-btn {
+    background-color: #6740d9;
+    color: #fff !important;
+    font-size: 2rem;
+    padding: 0.5rem 1.5rem;
+    height: 50px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3rem;
+    cursor: pointer;
+    margin: 2rem 0;
+    margin-right: 3rem;
+}
+.t-btn.active:hover i{
+    transform: rotate(0deg);
+}
+.t-btn:hover{
+    color: #fff; 
+}
+.t-btn.active i{
+    transform: rotate(90deg);
+}
+.t-btn:hover i{
+    margin-left: 2rem;
+    transform: rotate(90deg);
+}
+.t-btn i{
+    transition: all .3s ease;
+    margin-left: 1rem;
+}
+.t-show.active{
+    height: 0px;
+    overflow: hidden;
 }
 
 @media(max-width:1000px) {
@@ -200,5 +301,8 @@ video {
         top: -30px;
         left: 50px;
         right: inherit;
+    }
+    .t-h2 {
+        font-size: 3rem;
     }
 }

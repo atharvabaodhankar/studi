@@ -1401,6 +1401,11 @@ nav ul li a:hover {
      color: #FFF;
      margin-right: 1rem;
 }
+#version{
+     color: #fff;
+     font-size: 1.8rem;
+     font-weight: 600;
+}
 
 /* Navigation */
 #navigation {
