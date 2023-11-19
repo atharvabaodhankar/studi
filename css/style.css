@@ -17,7 +17,7 @@
 
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
 
-@import url(animate.min.css);
+@import url(glass.min.css);
 @import url(normalize.css);
 @import url(meanmenu.css);
 @import url(owl.carousel.min.css);
@@ -347,7 +347,7 @@ button {
 
 .head_top {
      background: url(../images/studi-purple.jpg);
-     
+
      background-size: cover;
      background-repeat: no-repeat;
      height: 100vh;
@@ -1057,10 +1057,23 @@ nav {
      transition: all .5s ease;
 }
 
+@keyframes slide-bottom {
+     0% {
+          -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+     }
+
+     100% {
+          -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+     }
+}
+
 nav.active-bar {
      position: fixed;
      background-color: var(--main);
      z-index: 100;
+     animation: slide-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 nav.active-bar .logo h1 {
@@ -1402,7 +1415,8 @@ nav ul li a:hover {
      color: #FFF;
      margin-right: 1rem;
 }
-#version{
+
+#version {
      color: #fff;
      font-size: 1.8rem;
      font-weight: 600;
@@ -1842,6 +1856,7 @@ nav ul li a:hover {
           position: fixed;
           top: 80px;
           background-color: var(--main-dark);
+          transform: rotate(90deg);
           width: 100%;
           z-index: 100;
           left: -100%;
@@ -1853,6 +1868,7 @@ nav ul li a:hover {
           opacity: 1;
           padding: 3rem 0;
           left: 0;
+          transform: rotate(0deg);
      }
 
      nav ul li a {
@@ -1948,7 +1964,8 @@ nav ul li a:hover {
      .text-bg h1 {
           font-size: 45px;
      }
-     .popup{
+
+     .popup {
           width: 90%;
      }
 }

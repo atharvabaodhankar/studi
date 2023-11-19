@@ -1,0 +1,311 @@
+:root {
+    --main: #865DFF;
+    --main-dark: #6740d9;
+    --red: #EF1551;
+    --orange: #F15A23;
+    --pink: #CC56A0;
+}
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.titlepage{
+    background: #7158e2;
+}
+
+nav {
+    z-index: 10;
+    position: relative;
+}
+
+nav.active-bar {
+    background: rgba(134, 93, 255, 0.7);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+    transition: .5s ease;
+    filter: saturate(2);
+}
+
+nav.active ul {
+    background: rgba(103, 64, 217, 0.7);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+nav ul li a {
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.326);
+    backdrop-filter: blur(30px);
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    filter: saturate(5);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 80px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    animation: glass 25s linear infinite;
+    bottom: -150px;
+    filter: saturate(2);
+}
+
+.circles li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+@keyframes glass {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 50%;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+
+/* Glass Btn */
+
+.btn-glass {
+    position: relative;
+    display: inline-block;
+    border: none;
+    border-radius: 50px;
+    background: none;
+    padding: 25px 75px;
+    margin: 30px;
+}
+
+.btn-glass a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, .05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .2);
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 30px;
+    color: #fff;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    backdrop-filter: blur(15px)
+}
+
+.btn-glass:hover a {
+    letter-spacing: 3px;
+}
+
+.btn-glass a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background:
+        linear-gradient(to left, rgba(255, 255, 255, .15), transparent);
+    transform: skewX(40deg) translateX(0);
+    transition: all .5s ease-out;
+}
+
+.btn-glass:hover a::before {
+    transform: skewX(40deg) translateX(200%);
+}
+
+.btn-glass::before,
+.btn-glass::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 10px;
+    border-radius: 10px;
+    background: #f00;
+    transition: all .4s ease-in-out;
+    transition-delay: 0s;
+}
+
+.btn-glass::before {
+    bottom: -5px;
+}
+
+.btn-glass::after {
+    top: -5px;
+}
+
+.btn-glass:hover::before,
+.btn-glass:hover::after {
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: .3s;
+}
+
+.btn-glass:hover::before {
+    bottom: 0;
+}
+
+.btn-glass:hover::after {
+    top: 0;
+}
+
+.btn-glass:nth-child(1)::before,
+.btn-glass:nth-child(1)::after {
+    background: #ff7979;
+    box-shadow:
+        0 0 5px #ff7979,
+        0 0 15px #ff7979,
+        0 0 30px #ff7979,
+        0 0 60px #ff7979
+}
+
+.btn-glass:nth-child(2)::before,
+.btn-glass:nth-child(2)::after {
+    background: #2bd2ff;
+    box-shadow:
+        0 0 5px #2bd2ff,
+        0 0 15px #2bd2ff,
+        0 0 30px #2bd2ff,
+        0 0 60px #2bd2ff
+}
+
+.btn-glass:nth-child(3)::before,
+.btn-glass:nth-child(3)::after {
+    background: #865DFF;
+    box-shadow:
+        0 0 5px #865DFF,
+        0 0 15px #865DFF,
+        0 0 30px #865DFF,
+        0 0 60px #865DFF
+        /* background: #1eff45;
+    box-shadow: 
+      0 0 5px #1eff45,
+      0 0 15px #1eff45,
+      0 0 30px #1eff45,
+      0 0 60px #1eff45
+       */
+}
+
+.btn-glass:nth-child(4)::before,
+.btn-glass:nth-child(4)::after {
+    background: #fffa65;
+    box-shadow:
+        0 0 5px #fffa65,
+        0 0 15px #fffa65,
+        0 0 30px #fffa65,
+        0 0 60px #fffa65
+}
