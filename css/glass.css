@@ -15,7 +15,7 @@
     overflow: hidden;
 }
 .titlepage{
-    background: #7158e2;
+    background: #201f25;
 }
 
 nav {
@@ -308,4 +308,18 @@ nav ul li a {
         0 0 15px #fffa65,
         0 0 30px #fffa65,
         0 0 60px #fffa65
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    z-index: -1;
+    left: 0;
+    border-radius: 10px;
+    height: 100%;
+}
+nav ul li a{
+    z-index: 4;
+}
+nav ul li a:hover{
+    color: #000;
 }
