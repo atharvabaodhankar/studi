@@ -14,9 +14,7 @@
     height: 100%;
     overflow: hidden;
 }
-.titlepage{
-    background: #201f25;
-}
+
 
 nav {
     z-index: 10;
