@@ -1817,6 +1817,15 @@ nav ul li a:hover {
 }
 
 /* Popup End*/
+
+/* Header */
+.header-op{
+     position: relative;
+}
+.flow{
+     position: absolute;
+     bottom: 0;
+}
 @media screen and (max-width:1200px) {
      .assignments-box {
           width: 290px;
